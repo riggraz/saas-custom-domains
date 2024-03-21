@@ -1,5 +1,8 @@
 # Custom Domain API
+
 This service is designed to support custom domains for SaaS products.
+
+It is a fork from the [original project by Sireto](https://github.com/sireto/custom-domain) that basically just updates Python to 3.11
 
 # Usage
 Here are the steps you need to take to run this docker image.
@@ -76,19 +79,3 @@ Then, your customer should set the following DNS records:
 - Type: CNAME Record 
 - Name: customerdomain.com (or subdomain)
 - Target: `custom.example.com`
-
-# Source Code
-The full source code is available on GitHub <br/>
-[**https://github.com/sireto/custom-domain**](https://github.com/sireto/custom-domain)
-
-
-# Paid version and Support
-Don't want to host it yourself? No problem! We do it for you. Here's what you get on the paid version:
-- Unlimited domains
-- A dedicated IP address
-- 20TB of free traffic
-- Webserver with 2GB RAM, 1vCPU
-- Email support
-
-**Price: $20 / month** <br/>
-**Contact: info@sireto.com**
