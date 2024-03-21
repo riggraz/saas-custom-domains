@@ -16,7 +16,7 @@ jobs:
       run: docker build -t ${DOCKER_REGISTRY}/${IMAGE}:latest .
       env:
         DOCKER_REGISTRY: docker.io
-        IMAGE: sireto/custom-domain
+        IMAGE: riggraz/saas-custom-domains
     - name: Login to Docker Registry
       run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin ${DOCKER_REGISTRY}
       env:
@@ -25,4 +25,4 @@ jobs:
       run: docker push ${DOCKER_REGISTRY}/${IMAGE}:latest
       env:
         DOCKER_REGISTRY: docker.io
-        IMAGE: sireto/custom-domain
+        IMAGE: riggraz/saas-custom-domains
