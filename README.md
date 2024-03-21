@@ -29,7 +29,7 @@ version: "3.7"
 
 services:
   https:
-    image: sireto/custom-domain:latest
+    image: riggraz/saas-custom-domains:latest
     ports:
       - "80:80"
       - "443:443"
